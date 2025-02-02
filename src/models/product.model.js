@@ -13,5 +13,7 @@ const productSchema = new Schema({
 });
 
 productSchema.plugin(mongoosePaginate);
+productSchema.index({ category: 1, status: 1 });
+
 
 export const productModel = model("product", productSchema);

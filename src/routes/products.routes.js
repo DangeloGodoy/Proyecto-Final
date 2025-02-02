@@ -11,12 +11,27 @@ export const productsRouter = Router();
 // -----------------
 
 productsRouter.get("/", async (req, res) => {
-    const { page = 1, limit = 10 } = req.query;
+    const { page = 1, limit = 10, category, status, sort } = req.query;
 
     try {
+        let filter = {};
+
+        if (category) filter.category = new RegExp(`^${category}$`, "i");
+        if (status !== undefined) filter.status = status === "true";
+
+        let sortQuery = {};
+        if (sort) {
+            if (sort === "asc") sortQuery = 1;
+            else if (sort === "desc") sortQuery = -1;
+        }
+        
         const products = await productModel.paginate(
-            {},
-            { page: Number(page), limit: Number(limit) }
+            filter,
+            { 
+                page: Number(page), 
+                limit: Number(limit),
+                sort: sortQuery
+            }
         );
 
         res.status(200).json(products);
