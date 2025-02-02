@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="row">
+        {{#each products.docs}}
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">{{this.title}}</h5>
+                    <p class="card-text">{{this.description}}</p>
+                    <p class="card-text"><strong>Precio:</strong> ${{this.price}}</p>
+                    <p class="card-text"><strong>Stock:</strong> {{this.stock}} unidades</p>
+                    <p class="card-text"><strong>Categoría:</strong> {{this.category}}</p>
+                </div>
+                
+            </div>
+        </div>
+        {{/each}}
+    </div>
+
+    <div class="position-relative m-4">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                {{#if products.hasPrevPage}}
+                <li class="page-item">
+                    <a class="page-link" href="/?page={{products.prevPage}}&&limit=5">
+                        Anterior
+                    </a>
+                </li>
+                {{/if}}
+
+                {{! Links a siguientes páginas }}
+                {{#if products.hasNextPage}}
+                <li class="page-item">
+                    <a class="page-link" href="/?page={{products.nextPage}}&&limit=5">
+                        Siguiente
+                    </a>
+                </li>
+                {{/if}}
+            </ul>
+        </nav>
+        <p class="btn btn-primary">
+            Pagina actual: {{products.page}}
+        </p>
+    </div>
+</div>

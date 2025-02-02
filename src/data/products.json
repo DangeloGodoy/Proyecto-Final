@@ -1,0 +1,197 @@
+[
+  {
+    "title": "Laptop Gamer RTX 3070",
+    "description": "Laptop de alto rendimiento con tarjeta gráfica RTX 3070 y 16GB RAM.",
+    "code": "LAP-GAM-001",
+    "price": 2200,
+    "status": true,
+    "stock": 10,
+    "category": "Computadoras",
+    "thumbnails": [
+      "laptop1.jpg",
+      "laptop2.jpg"
+    ]
+  },
+  {
+    "title": "Teclado Mecánico RGB",
+    "description": "Teclado mecánico con switches rojos y retroiluminación RGB personalizable.",
+    "code": "TEC-MEC-002",
+    "price": 120,
+    "status": true,
+    "stock": 25,
+    "category": "Periféricos",
+    "thumbnails": [
+      "teclado1.jpg",
+      "teclado2.jpg"
+    ]
+  },
+  {
+    "title": "Mouse Inalámbrico",
+    "description": "Mouse ergonómico inalámbrico con sensor óptico de alta precisión.",
+    "code": "MOU-WIR-003",
+    "price": 50,
+    "status": true,
+    "stock": 30,
+    "category": "Accesorios",
+    "thumbnails": [
+      "mouse1.jpg",
+      "mouse2.jpg"
+    ]
+  },
+  {
+    "title": "Monitor 4K UltraWide",
+    "description": "Monitor de 34 pulgadas con resolución 4K y tasa de refresco de 144Hz.",
+    "code": "MON-4K-004",
+    "price": 600,
+    "status": true,
+    "stock": 15,
+    "category": "Monitores",
+    "thumbnails": [
+      "monitor1.jpg",
+      "monitor2.jpg"
+    ]
+  },
+  {
+    "title": "Auriculares Bluetooth ANC",
+    "description": "Auriculares inalámbricos con cancelación activa de ruido y batería de 40 horas.",
+    "code": "AUD-BLU-005",
+    "price": 180,
+    "status": true,
+    "stock": 20,
+    "category": "Audio",
+    "thumbnails": [
+      "audifonos1.jpg",
+      "audifonos2.jpg"
+    ]
+  },
+  {
+    "title": "Smartwatch Deportivo",
+    "description": "Reloj inteligente con GPS, sensor de ritmo cardíaco y pantalla AMOLED.",
+    "code": "SMA-WAT-006",
+    "price": 250,
+    "status": true,
+    "stock": 18,
+    "category": "Wearables",
+    "thumbnails": [
+      "smartwatch1.jpg",
+      "smartwatch2.jpg"
+    ]
+  },
+  {
+    "title": "Cámara de Seguridad WiFi",
+    "description": "Cámara de seguridad con visión nocturna y detección de movimiento.",
+    "code": "CAM-SEC-007",
+    "price": 90,
+    "status": true,
+    "stock": 22,
+    "category": "Seguridad",
+    "thumbnails": [
+      "camara1.jpg",
+      "camara2.jpg"
+    ]
+  },
+  {
+    "title": "Disco SSD NVMe 1TB",
+    "description": "Unidad de estado sólido NVMe de 1TB con velocidades de lectura de 3500MB/s.",
+    "code": "SSD-NVM-008",
+    "price": 140,
+    "status": true,
+    "stock": 35,
+    "category": "Almacenamiento",
+    "thumbnails": [
+      "ssd1.jpg",
+      "ssd2.jpg"
+    ]
+  },
+  {
+    "title": "Silla Gamer Ergonómica",
+    "description": "Silla gaming con soporte lumbar, reposabrazos ajustables y cuero sintético.",
+    "code": "SIL-GAM-009",
+    "price": 300,
+    "status": true,
+    "stock": 12,
+    "category": "Muebles",
+    "thumbnails": [
+      "silla1.jpg",
+      "silla2.jpg"
+    ]
+  },
+  {
+    "title": "Micrófono Profesional USB",
+    "description": "Micrófono de condensador ideal para streaming y podcasting con reducción de ruido.",
+    "code": "MIC-PRO-010",
+    "price": 130,
+    "status": true,
+    "stock": 25,
+    "category": "Audio",
+    "thumbnails": [
+      "microfono1.jpg",
+      "microfono2.jpg"
+    ]
+  },
+  {
+    "title": "Router WiFi 6 Mesh",
+    "description": "Router con tecnología WiFi 6 para conexiones estables y cobertura extendida.",
+    "code": "ROU-WIF-011",
+    "price": 160,
+    "status": true,
+    "stock": 18,
+    "category": "Redes",
+    "thumbnails": [
+      "router1.jpg",
+      "router2.jpg"
+    ]
+  },
+  {
+    "title": "Tablet 10 Pulgadas",
+    "description": "Tablet con pantalla Full HD de 10 pulgadas y procesador Octa-Core.",
+    "code": "TAB-10P-012",
+    "price": 320,
+    "status": true,
+    "stock": 20,
+    "category": "Tablets",
+    "thumbnails": [
+      "tablet1.jpg",
+      "tablet2.jpg"
+    ]
+  },
+  {
+    "title": "Tarjeta Gráfica RTX 4060",
+    "description": "Tarjeta gráfica de última generación con 8GB GDDR6 y Ray Tracing.",
+    "code": "GPU-RTX-013",
+    "price": 500,
+    "status": true,
+    "stock": 10,
+    "category": "Componentes",
+    "thumbnails": [
+      "gpu1.jpg",
+      "gpu2.jpg"
+    ]
+  },
+  {
+    "title": "Cargador Inalámbrico Rápido",
+    "description": "Cargador inalámbrico con carga rápida de 15W para dispositivos Qi.",
+    "code": "CAR-INA-014",
+    "price": 45,
+    "status": true,
+    "stock": 40,
+    "category": "Accesorios",
+    "thumbnails": [
+      "cargador1.jpg",
+      "cargador2.jpg"
+    ]
+  },
+  {
+    "title": "Gamepad Bluetooth",
+    "description": "Control inalámbrico compatible con PC, Android y iOS.",
+    "code": "GAM-BLU-015",
+    "price": 60,
+    "status": true,
+    "stock": 28,
+    "category": "Gaming",
+    "thumbnails": [
+      "gamepad1.jpg",
+      "gamepad2.jpg"
+    ]
+  }
+]
