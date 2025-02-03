@@ -1,0 +1,37 @@
+### POST Create new cart
+POST http://localhost:8000/api/carts
+Content-Type: application/json
+
+{}
+
+### GET Get cart by ID
+GET http://localhost:8000/api/carts/67a0042f58cfda7c1472668a
+Content-Type: application/json
+
+{}
+
+### POST Add product to cart
+POST http://localhost:8000/api/carts/67a0042f58cfda7c1472668a/product/679fd967c5bf68ad88180fdf
+Content-Type: application/json
+
+{}
+
+### PUT Modify cuantity of product
+PUT http://localhost:8000/api/carts/67a0042f58cfda7c1472668a/product/679fd967c5bf68ad88180fdd
+Content-Type: application/json
+
+{
+    "quantity": 4
+}
+
+### DELETE Delete producto of cart
+DELETE http://localhost:8000/api/carts/67a0042f58cfda7c1472668a/product/679fd967c5bf68ad88180fdd
+Content-Type: application/json
+
+{}
+
+### DELETE Delete all products
+DELETE http://localhost:8000/api/carts/67a0042f58cfda7c1472668a
+Content-Type: application/json
+
+{}

@@ -20,7 +20,7 @@ Content-Type: application/json
 }
 
 ### GET Product by ID
-GET http://localhost:8000/api/products/679fd967c5bf68ad88180fdb
+GET http://localhost:8000/api/products/679fd967c5bf68ad88180fda
 Content-Type: application/json
 
 {}

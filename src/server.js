@@ -9,7 +9,7 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 
 import { productsRouter  } from './routes/products.routes.js';
-//import { cartRouter } from './routes/cart.routes.js';
+import { cartRouter } from './routes/cart.routes.js';
 import { viewsRoutes  } from './routes/views.routes.js';
 import { __dirname } from "./dirname.js";
 
@@ -47,7 +47,7 @@ mongoose.connect(process.env.MONGO_URI)
 // Routes
 app.use("/", viewsRoutes);
 app.use("/api/products", productsRouter);
-//app.use("/api/carts", cartRouter);
+app.use("/api/carts", cartRouter);
 
 // Websocket config
 const server = app.listen(PORT, () => {
