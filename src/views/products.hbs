@@ -1,7 +1,9 @@
+<h1>Productos disponibles</h1>
+
 <div class="container">
-    <div class="row">
+    <div id="products" class="row">
         {{#each products.docs}}
-        <div class="col-md-4">
+        <div class="col-md-4 p-3">
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">{{this.title}}</h5>
@@ -9,36 +11,28 @@
                     <p class="card-text"><strong>Precio:</strong> ${{this.price}}</p>
                     <p class="card-text"><strong>Stock:</strong> {{this.stock}} unidades</p>
                     <p class="card-text"><strong>Categoría:</strong> {{this.category}}</p>
+                    <a href="/product/{{this._id}}" class="btn btn-primary">Ver producto</a>
+                    <button class="btn btn-success add-to-cart" data-product-id={{this._id}}>Agregar al carrito</button>
                 </div>
-                
             </div>
         </div>
         {{/each}}
     </div>
 
-    <div class="position-relative m-4">
-        <nav aria-label="Page navigation example">
-            <ul class="pagination">
-                {{#if products.hasPrevPage}}
-                <li class="page-item">
-                    <a class="page-link" href="/?page={{products.prevPage}}&&limit=5">
-                        Anterior
-                    </a>
-                </li>
-                {{/if}}
+    <div class="btn-group">
+        {{#if products.hasPrevPage}}
+        <a href="/?page={{products.prevPage}}&&limit=5" class="btn btn-primary" aria-current="page">Anterior</a>
+        {{/if}}
 
-                {{! Links a siguientes páginas }}
-                {{#if products.hasNextPage}}
-                <li class="page-item">
-                    <a class="page-link" href="/?page={{products.nextPage}}&&limit=5">
-                        Siguiente
-                    </a>
-                </li>
-                {{/if}}
-            </ul>
-        </nav>
-        <p class="btn btn-primary">
-            Pagina actual: {{products.page}}
-        </p>
+        <a class="btn btn-primary active" aria-current="page">Página actual: {{products.page}}</a>
+
+        {{#if products.hasNextPage}}
+        <a href="/?page={{products.nextPage}}&&limit=5" class="btn btn-primary ">Siguiente</a>
+        {{/if}}
     </div>
+
+    <a id="go-to-cart" class="btn btn-secondary">Ir al carrito</a>
+
 </div>
+
+<script src="/socket.io/socket.io.js"></script>

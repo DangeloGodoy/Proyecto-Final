@@ -1,0 +1,36 @@
+<h1 class="text-center">🛒 Productos agregados al carrito</h1>
+
+<div class="container">
+    {{#if productCart.products.length}}
+    <div id="cart-items" class="row">
+        {{#each productCart.products}}
+        <div class="col-md-4 p-3">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">{{this.product.title}}</h5>
+                    <p class="card-text">{{this.product.description}}</p>
+                    <p class="card-text"><strong>Precio:</strong> ${{this.product.price}}</p>
+                    <p class="card-text"><strong>Stock:</strong> {{this.product.stock}} unidades</p>
+                    <p class="card-text"><strong>Categoría:</strong> {{this.product.category}}</p>
+                    <p class="card-text"><strong>Cantidad en carrito:</strong> {{this.quantity}}</p>
+
+                    <p class="btn btn-danger remove-from-cart" data-product-id="{{this.product._id}}">
+                        Eliminar del carrito
+                    </p>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+
+    {{!-- ✅ Botón para vaciar el carrito --}}
+    <div class="text-center mt-4">
+        <button id="empty-cart" class="btn btn-warning">🗑️ Vaciar carrito</button>
+    </div>
+    {{else}}
+    <p class="text-center mt-4">No hay productos en el carrito.</p>
+    {{/if}}
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/main.js"></script>
